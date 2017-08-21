@@ -9,6 +9,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "mongoose": "^4.11.5",
     "nunjucks": "^3.0.1"
   },
   "devDependencies": {
@@ -32,7 +33,7 @@
   "scripts": {
     "grunt": "grunt",
     "grunt:watch": "grunt watch",
-    "lint": "eslint *.js",
+    "lint": "eslint *.js controllers lib models",
     "start": "supervisor -w index.js,controllers -e js index.js",
     "test": "ava"
   }

@@ -49,6 +49,9 @@ spec:
             port: ${K8S_PORT}
           initialDelaySeconds: 30
           timeoutSeconds: 30
+        env:
+          key: MONGO_URI
+          value: "mongodb://mongo-0.mongo,mongo-1.mongo:27017/hello_world"
       imagePullSecrets:
       - name: "${DOCKER_REGISTRY}"
 
